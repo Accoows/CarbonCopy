@@ -4,6 +4,7 @@
 <head>
     <title>Placeholder copy</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -38,8 +39,39 @@
     </section>
     <section class="section-fourth">
         <h2 class="h2-placeholder-dash">Dashboard</h2>
-        <p>Coming soom, stay tuned!</p>
+        
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Weather</h3>
+                <h4>Wed 17 Feb 2021 12:45</h4>
+                <p>In the north of the country it’s very windy and cold. There is a chance of some rain too, so don’t leave home without your umbrella!</p>
+                <a href="#">Read the article</a>
+            </div>
+            <div class="card">
+                <h3>News</h3>
+                <h4>Bitcoin hits new record of $50,000</h4>
+                <p>The so-called cryptocurrency, which was created by an unknown inventor, has risen about 72% this year. Regulators have warned that...</p>
+                <a href="#">Read the article</a>
+            </div>
+            <div class="card">
+                <h3>Horoscope</h3>
+                <h4>Pisces</h4>
+                <p>One of the most critical stories of 2021 gets underfoot today, Pisces. Try to tune into the messages around you!</p>
+                <a href="#">Read the article</a>
+            </div>
+        </div>
     </section>
+
+    <div class="modal hidden">
+        <div class="modal-inner">
+            <button class="modal-close">Close</button>
+            <div class="modal-card">
+                <h3 class="modal-title"></h3>
+                <h4 class="modal-subtitle"></h4>
+                <p class="modal-text"></p>
+            </div>
+        </div>
+    </div>    
 
     <footer class="footer">
         <div class="footer-info">
