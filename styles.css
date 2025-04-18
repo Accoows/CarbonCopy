@@ -333,7 +333,6 @@ body {
     padding: 40px;
     width: 100%;
     max-width: 800px;
-    text-align: left;
 }
 
 .modal-card h3 {
@@ -350,4 +349,32 @@ body {
 .modal-card p {
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* Text alignments */
+
+.text-align-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.align-text {
+    text-decoration: underline;
+}
+
+.align-btn {
+    padding: 0px 10px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.align-btn.active {
+    font-weight: bold;
+    background-color: #eee;
 }

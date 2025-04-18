@@ -75,4 +75,39 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Bouton pour aligner le texte de la modale
+    const modalCard = document.querySelector('.modal-card');
+    const alignBtn = document.querySelectorAll('.align-btn');
+
+    alignBtn.forEach(button => {
+        button.addEventListener('click', () => {
+            alignBtn.forEach(btn => btn.classList.remove('active'));
+
+            button.classList.add('active');
+
+            if (button.classList.contains('left')) {
+                modalCard.style.textAlign = 'left';
+            } else if (button.classList.contains('center')) {
+                modalCard.style.textAlign = 'center';
+            }
+        });
+    });
+
+    // Chuck Norris API Header
+    const header = document.querySelector('.header');
+
+    async function ChuckNorrisApi() {
+        try {
+            const response = await fetch('https://api.chucknorris.io/jokes/random');
+            const data = await response.json();
+            header.textContent = data.value;
+        } catch (error) {
+            header.textContent = "Error ChucKNorrisAPI";
+            console.error('Error fetching Chuck Norris joke:', error);
+        }
+    }
+        
+    ChuckNorrisApi();
+
+    setInterval(ChuckNorrisApi, 10000)
 });

@@ -16,7 +16,11 @@
             <li class="li"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header class="header"> Hello there.  Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there.</header>
+
+    <!-- Dans l'exemple on bloque le déplacement de la navbar, mais c'est pas beau... donc je l'ai pas fait -->
+    <!-- Pour l'application on passe sur body et navbar en ajoutant les paramètres de position: fixe, top, left, width, z-index... -->
+
+    <header class="header"></header>
     <h1 class="h1-placeholder">Welcome to Placeholder Inc. !</h1>
 
     <section class="section-first">
@@ -66,6 +70,11 @@
         <div class="modal-inner">
             <button class="modal-close">Close</button>
             <div class="modal-card">
+                <div class="text-align-controls">
+                    <a class="align-text">Alignment</a>
+                    <a class="align-btn left active"> Left</a>
+                    <a class="align-btn center"> Center</a>
+                </div>
                 <h3 class="modal-title"></h3>
                 <h4 class="modal-subtitle"></h4>
                 <p class="modal-text"></p>
