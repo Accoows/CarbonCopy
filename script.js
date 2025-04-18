@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sectionFirst.classList.toggle("row-reverse");
     });
 
+    // Afficher le contenu de la section 2R au clic
     const button = document.querySelector(".btn-contact");
     const input = document.querySelector(".input-contact");
     const paragraph = document.querySelector(".section-third-right p");
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-
+    // Afficher le contenu des cards individuellement
     const modal = document.querySelector('.modal');
     const modalTitle = document.querySelector('.modal-title');
     const modalSubtitle = document.querySelector('.modal-subtitle');
